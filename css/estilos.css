@@ -1,0 +1,173 @@
+/* Tipografía de Google Fonts alojada localmente para funcionar sin conexión. */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fuentes/manrope.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --verde: #284e43;
+  --verde-oscuro: #203e35;
+  --salvia: #dfe5d7;
+  --crema: #f5f2e9;
+  --tierra: #b96847;
+  --texto: #293b32;
+  --blanco: #ffffff;
+}
+
+/* Base mobile first. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--texto); background: var(--blanco); font-family: "Manrope", Arial, sans-serif; line-height: 1.6; }
+img { display: block; width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: 0.25em; }
+button, input { font: inherit; }
+button, summary { cursor: pointer; }
+h1, h2, p { margin-top: 0; }
+h1, h2 { line-height: 1.15; }
+section { scroll-margin-top: 1rem; }
+:focus-visible { outline: 3px solid var(--tierra); outline-offset: 5px; }
+.contenedor { width: 88%; max-width: 72rem; margin: 0 auto; }
+.eyebrow { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; }
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem; padding: 0.95rem 1.2rem; border: 1px solid var(--verde); background: var(--verde); color: var(--blanco); font-size: 0.75rem; font-weight: 700; text-decoration: none; transition: background-color 0.2s, transform 0.2s; }
+.boton:hover { background: var(--verde-oscuro); transform: translateY(-2px); }
+.flecha { display: inline-block; position: relative; width: 0.65rem; height: 0.65rem; border-top: 2px solid currentColor; border-right: 2px solid currentColor; flex-shrink: 0; }
+.flecha::before { content: ""; position: absolute; width: 0.85rem; height: 2px; top: 0.18rem; right: -0.1rem; background: currentColor; transform: rotate(-45deg); }
+.saltar { position: absolute; top: -6rem; left: 1rem; z-index: 5; padding: 1rem; background: var(--blanco); }
+.saltar:focus { top: 1rem; }
+
+/* Cabecera y portada. */
+.portada { background: var(--salvia); }
+.cabecera { display: flex; justify-content: space-between; align-items: center; min-height: 5rem; border-bottom: 1px solid #a8b4a3; }
+.marca { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.06em; text-decoration: none; white-space: nowrap; }
+.marca span { display: inline-block; color: var(--tierra); margin-left: 0.3rem; }
+.menu-escritorio { display: none; }
+.menu-movil { position: relative; }
+.menu-movil summary { list-style: none; font-size: 1.5rem; padding: 0.5rem; }
+.menu-movil summary::-webkit-details-marker { display: none; }
+.menu-movil nav { position: absolute; right: 0; top: 100%; z-index: 2; width: 13rem; padding: 1rem; background: var(--crema); border: 1px solid #a8b4a3; box-shadow: 0 0.5rem 1rem #284e431a; }
+.menu-movil nav a { display: block; padding: 0.6rem; text-decoration: none; }
+.menu-movil nav a:hover { background: var(--salvia); }
+.hero { text-align: center; padding: 3.2rem 0 4.2rem; }
+.hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.065em; margin-bottom: 1.7rem; }
+.hero .eyebrow { margin-bottom: 1rem; }
+
+/* Hábitos: una columna en móvil. */
+.habitos { display: grid; gap: 2.8rem; padding: 3rem 0 3.7rem; }
+.habito { text-align: center; max-width: 16rem; margin: 0 auto; }
+.habito img { width: 8.5rem; height: 8.5rem; border-radius: 50%; object-fit: cover; margin: 0 auto 1.1rem; }
+.habito h2 { font-size: 0.95rem; margin-bottom: 0.55rem; }
+.habito p { font-size: 0.8rem; margin-bottom: 0; }
+.habito-extra { display: none; }
+
+/* Mosaico: imagen, texto y llamada a la acción. */
+.segunda-vida { background: var(--crema); }
+.mosaico { display: grid; grid-template-columns: 1fr; }
+.imagen-armario { height: 17rem; object-fit: cover; }
+.mensaje-mosaico { background: var(--salvia); padding: 3rem 1rem; text-align: center; }
+.mensaje-mosaico h2 { font-size: 1.6rem; letter-spacing: -0.04em; margin-bottom: 0; }
+.accion-mosaico { position: relative; display: flex; align-items: center; justify-content: center; min-height: 14rem; background: #c3cdbb; padding: 1rem; }
+.accion-mosaico img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; }
+.accion-mosaico .boton { position: relative; text-align: center; }
+.texto-segunda-vida { display: none; }
+
+/* Recursos. Las etiquetas usan position:absolute. */
+.guias { display: grid; gap: 2.7rem; padding: 3.2rem 0; }
+.imagen-tarjeta { position: relative; overflow: hidden; background: var(--salvia); }
+.imagen-tarjeta img { height: 13rem; object-fit: cover; transition: transform 0.3s; }
+.imagen-tarjeta:hover img { transform: scale(1.04); }
+.imagen-tierra { background: #ead5c7; }
+.etiqueta { position: absolute; right: 0; top: 1rem; padding: 0.35rem 0.65rem; background: var(--crema); color: var(--verde); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em; }
+.tarjeta h2 { margin: 1.1rem 0 0.7rem; font-size: 1.25rem; letter-spacing: -0.035em; }
+.tarjeta p { font-size: 0.85rem; }
+.enlace-guia { display: flex; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid #c6cdbf; font-size: 0.8rem; font-weight: 700; text-decoration: none; }
+.enlace-guia:hover { color: var(--tierra); }
+.detalle-guia { margin-top: 0.8rem; font-size: 0.8rem; scroll-margin-top: 2rem; }
+.detalle-guia summary { padding: 0.4rem 0; }
+.detalle-guia ol { padding-left: 1.2rem; }
+.detalle-guia li { margin-bottom: 0.7rem; }
+.detalle-guia:target { outline: 2px solid var(--tierra); outline-offset: 5px; }
+.tarjeta-extra { display: none; }
+
+/* Formulario: validación HTML mediante email y required. */
+.contacto { padding: 3rem 0; background: var(--verde); color: var(--crema); text-align: center; }
+.contacto h2 { font-size: 1.6rem; font-weight: 500; letter-spacing: -0.04em; margin-bottom: 1.6rem; }
+.contacto form { max-width: 38rem; margin: 0 auto; }
+.fila-formulario { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; }
+.campo-email { width: 100%; text-align: left; }
+.campo-email span { display: block; font-size: 0.75rem; margin-bottom: 0.4rem; }
+.campo-email input { display: block; width: 100%; min-width: 0; border: 1px solid var(--crema); border-radius: 0; padding: 1rem; background: var(--crema); color: var(--texto); font-size: 0.85rem; }
+.boton-claro { background: var(--crema); color: var(--verde); border-color: var(--crema); }
+.boton-claro:hover { background: var(--salvia); }
+.consentimiento { display: flex; align-items: flex-start; justify-content: center; gap: 0.5rem; margin-top: 1.2rem; font-size: 0.7rem; text-align: left; }
+.consentimiento input { flex-shrink: 0; accent-color: var(--tierra); width: 1rem; height: 1rem; margin: 0.1rem 0 0; }
+.nota-formulario { font-size: 0.65rem; margin: 0.9rem 0 0; }
+.pie { background: var(--crema); padding: 1.8rem 0; text-align: center; font-size: 0.7rem; }
+.pie .marca { font-size: 1.1rem; }
+.ods { display: block; margin-top: 0.4rem; }
+.creditos { max-width: 45rem; margin: 1rem auto 0; }
+.creditos p { margin: 1rem 0 0; }
+
+/* Tablet: menú completo, 4 hábitos y 2 recursos. */
+@media (min-width: 40rem) {
+  .cabecera { min-height: 6rem; }
+  .marca { font-size: 1.5rem; }
+  .menu-movil { display: none; }
+  .menu-escritorio { display: flex; align-items: center; gap: 1.3rem; }
+  .menu-escritorio a { font-size: 0.75rem; text-decoration: none; }
+  .menu-escritorio a:hover { text-decoration: underline; }
+  .enlace-sumate { border-left: 1px solid #a8b4a3; padding-left: 1rem; }
+  .hero { padding: 4rem 0 5rem; }
+  .hero h1 { font-size: 4.5rem; }
+  .eyebrow { font-size: 0.7rem; }
+  .habitos { grid-template-columns: repeat(2, 1fr); gap: 3rem; padding: 4rem 0; }
+  .habito-extra { display: block; }
+  .habito img { width: 9rem; height: 9rem; }
+  .mosaico { grid-template-columns: repeat(2, 1fr); }
+  .imagen-armario { grid-column: 1 / -1; height: 23rem; }
+  .mensaje-mosaico { display: flex; flex-direction: column; justify-content: center; }
+  .accion-mosaico { min-height: 16rem; }
+  .texto-segunda-vida { display: block; padding: 4rem 8%; }
+  .texto-segunda-vida h2 { font-size: 2.4rem; letter-spacing: -0.05em; }
+  .texto-segunda-vida > p:not(.eyebrow) { font-size: 0.9rem; max-width: 33rem; }
+  .texto-segunda-vida .boton { margin-top: 1rem; }
+  .guias { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding: 4rem 0; }
+  .fila-formulario { flex-direction: row; align-items: flex-end; }
+  .campo-email { flex: 1; }
+  .boton-claro { flex-shrink: 0; min-height: 3.45rem; }
+  .contacto { padding: 3.5rem 0; }
+  .contacto h2 { font-size: 2rem; }
+}
+
+/* Escritorio: 4 hábitos, mosaico a la izquierda y 3 recursos. */
+@media (min-width: 64rem) {
+  .cabecera { min-height: 6.5rem; }
+  .menu-escritorio { gap: 2rem; }
+  .hero { padding: 4.7rem 0 6rem; }
+  .hero h1 { font-size: 6rem; }
+  .habitos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; padding: 4rem 0 4.5rem; }
+  .habito img { width: 8.5rem; height: 8.5rem; }
+  .segunda-vida { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .imagen-armario { height: 20rem; }
+  .mensaje-mosaico h2 { font-size: 1.5rem; }
+  .mensaje-mosaico .eyebrow { font-size: 0.6rem; }
+  .accion-mosaico { min-height: 17rem; }
+  .accion-mosaico .boton { font-size: 0.65rem; gap: 0.8rem; }
+  .texto-segunda-vida { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 4rem 12%; }
+  .guias { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem; padding: 4.5rem 0; }
+  .tarjeta-extra { display: block; }
+  .imagen-tarjeta img { height: 14rem; }
+}
+
+/* Respeta la preferencia de quienes reducen las animaciones. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+
+/* Pantalla de demostración del envío. */
+.pagina-gracias { min-height: 100vh; display: flex; align-items: center; background: var(--salvia); }
+.confirmacion { max-width: 38rem; padding: 4rem 0; }
+.confirmacion h1 { margin-top: 2rem; font-size: 2.8rem; letter-spacing: -0.05em; }

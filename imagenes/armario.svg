@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650">
+<rect width="1000" height="650" fill="#d5dccd"/><circle cx="775" cy="105" r="190" fill="#c2ceb9"/><path d="M110 545h780" stroke="#a5b69e" stroke-width="3"/>
+<path d="M255 548V115h485v433M239 146h516" fill="none" stroke="#3a5b4c" stroke-width="13" stroke-linecap="round"/>
+<path d="M371 149c0-32 39-32 39-7 0 14-22 14-22 31l-62 42h129l-67-42M560 149c0-32 39-32 39-7 0 14-22 14-22 31l-62 42h129l-67-42" fill="none" stroke="#3a5b4c" stroke-width="5"/>
+<path d="m340 206-64 41-45 113 61 27 34-59v170h133V328l34 59 60-27-46-113-63-41c-10 38-52 38-64 0Z" fill="#f4ecdb" stroke="#b8ac92" stroke-width="3"/>
+<path d="m532 207-47 33-25 73 56 19 11-27v191h124V305l13 27 51-19-22-73-49-33-56 28Z" fill="#b76c4d"/><path d="M588 235v261M551 345h23M607 345h23" stroke="#925036" stroke-width="3"/>
+<rect x="690" y="444" width="140" height="103" rx="8" fill="#a89a7b"/><path d="M714 465h92M714 482h92M714 499h92M714 516h92" stroke="#e7ddc4" stroke-width="4"/>
+<path d="M160 540V365m0 78c-49 0-70-40-63-65 43-1 63 23 63 65Zm0-27c45-5 62-38 57-60-44 1-62 26-57 60Z" fill="#64866a" stroke="#3a5b4c" stroke-width="4"/><path d="m117 492 12 57h67l12-57Z" fill="#b76c4d"/>
+</svg>

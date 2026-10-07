@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dale otra vuelta a tu ropa. Ideas para cuidar, reparar y reutilizar tus prendas con un consumo más consciente.">
+  <title>Otra vuelta · Tu ropa tiene más vida</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="portada" id="inicio">
+    <header class="cabecera contenedor">
+      <a class="marca" href="#inicio" aria-label="Otra vuelta, inicio">otra vuelta<span class="flecha" aria-hidden="true"></span></a>
+      <!-- Menú móvil desplegable sin JavaScript. -->
+      <details class="menu-movil">
+        <summary aria-label="Abrir menú de navegación"><span aria-hidden="true">☰</span></summary>
+        <nav aria-label="Navegación móvil">
+          <a href="#habitos">Hábitos</a>
+          <a href="#segunda-vida">Segunda vida</a>
+          <a href="#guias">Guías</a>
+          <a href="#contacto">Sumate</a>
+        </nav>
+      </details>
+      <nav class="menu-escritorio" aria-label="Navegación principal">
+        <a href="#habitos">Hábitos</a>
+        <a href="#segunda-vida">Segunda vida</a>
+        <a href="#guias">Guías</a>
+        <a class="enlace-sumate" href="#contacto">Sumate <span class="flecha" aria-hidden="true"></span></a>
+      </nav>
+    </header>
+    <div class="hero contenedor">
+      <p class="eyebrow">MENOS COMPRAR. MÁS CUIDAR.</p>
+      <h1>Tu ropa tiene<br>más vida.</h1>
+      <a class="boton" href="#habitos">Dale otra vuelta <span class="flecha" aria-hidden="true"></span></a>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- El wireframe muestra 2 hábitos en móvil y 4 desde tablet. -->
+    <section class="habitos contenedor" id="habitos" aria-label="Cuatro hábitos para cuidar tu ropa">
+      <article class="habito">
+        <img src="imagenes/camiseta.svg" alt="Camiseta de algodón con costuras visibles" width="400" height="360">
+        <h2>Cuidá lo que tenés</h2>
+        <p>Leé la etiqueta, lavá cuando sea necesario y dejá secar al aire.</p>
+      </article>
+      <article class="habito">
+        <img src="imagenes/aguja.svg" alt="Aguja e hilo para reparar una prenda" width="400" height="360">
+        <h2>Repará, no descartes</h2>
+        <p>Un botón o una costura pueden ser el comienzo de una nueva historia.</p>
+      </article>
+      <article class="habito habito-extra">
+        <img src="imagenes/percha.svg" alt="Percha lista para una prenda de segunda mano" width="400" height="360">
+        <h2>Compartí el armario</h2>
+        <p>Intercambiá lo que ya no usás. A otra persona le puede encantar.</p>
+      </article>
+      <article class="habito habito-extra">
+        <img src="imagenes/bolsa.svg" alt="Bolsa reutilizable de tela con una hoja bordada" width="400" height="360">
+        <h2>Elegí con intención</h2>
+        <p>Antes de comprar, pensá si lo necesitás y cómo lo vas a usar.</p>
+      </article>
+    </section>
+
+    <section class="segunda-vida" id="segunda-vida" aria-label="Dale una segunda vida a tu ropa">
+      <div class="mosaico">
+        <img class="imagen-armario" src="imagenes/armario.svg" alt="Armario ilustrado con prendas cuidadas, una cesta y una planta" width="1000" height="650" loading="lazy">
+        <div class="mensaje-mosaico">
+          <p class="eyebrow">EL CAMBIO EMPIEZA EN CASA</p>
+          <h2>Mirar tu armario<br>con otros ojos.</h2>
+        </div>
+        <div class="accion-mosaico">
+          <img src="imagenes/aguja.svg" alt="" width="400" height="360" loading="lazy">
+          <a class="boton" href="#guias">Empezá por algo simple <span class="flecha" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <div class="texto-segunda-vida">
+        <p class="eyebrow">UNA PRENDA. MUCHAS POSIBILIDADES.</p>
+        <h2>Lo nuevo puede<br>ser lo que ya tenés.</h2>
+        <p>No necesitás renovar todo tu armario para cambiar tu manera de consumir. Podés empezar por usar esa camisa olvidada, arreglar un cierre o combinar distinto tus prendas favoritas.</p>
+        <p>Darles más tiempo de uso es una forma concreta de aprovechar los materiales y el trabajo que ya están en ellas. El siguiente paso puede ser pequeño. Lo importante es empezar.</p>
+        <a class="boton" href="#contacto">Me sumo al cambio <span class="flecha" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <!-- 2 tarjetas en móvil y tablet; 3 en escritorio, según el wireframe. -->
+    <section class="guias contenedor" id="guias" aria-label="Guías para empezar">
+      <article class="tarjeta">
+        <div class="imagen-tarjeta">
+          <img src="imagenes/camiseta.svg" alt="Ilustración de una camiseta para la guía de cuidado" width="400" height="360" loading="lazy">
+          <span class="etiqueta">CUIDADO</span>
+        </div>
+        <h2>Pequeños cuidados,<br>muchos usos más.</h2>
+        <p>Separar colores, revisar la etiqueta y secar con cuidado: una rutina simple para tus prendas.</p>
+        <a class="enlace-guia" href="#guia-cuidado">Ver la guía <span class="flecha" aria-hidden="true"></span></a>
+        <details id="guia-cuidado" class="detalle-guia">
+          <summary>Consejos de cuidado</summary>
+          <ol>
+            <li>Revisá las indicaciones de la etiqueta antes de lavar.</li>
+            <li>Separá las prendas por color y tipo de tejido.</li>
+            <li>Vaciá los bolsillos y cerrá los cierres.</li>
+            <li>Elegí un ciclo adecuado a la prenda y evitá el exceso de detergente.</li>
+            <li>Secá al aire cuando la etiqueta lo permita.</li>
+          </ol>
+        </details>
+      </article>
+      <article class="tarjeta">
+        <div class="imagen-tarjeta imagen-tierra">
+          <img src="imagenes/aguja.svg" alt="Aguja con hilo para la guía de reparación" width="400" height="360" loading="lazy">
+          <span class="etiqueta">REPARACIÓN</span>
+        </div>
+        <h2>Ese arreglo pendiente<br>merece una oportunidad.</h2>
+        <p>Un pequeño kit de costura y un poco de paciencia. No hace falta empezar por lo más difícil.</p>
+        <a class="enlace-guia" href="#guia-reparacion">Ver la guía <span class="flecha" aria-hidden="true"></span></a>
+        <details id="guia-reparacion" class="detalle-guia">
+          <summary>Primeros arreglos</summary>
+          <ol>
+            <li>Elegí una prenda con un arreglo pequeño, como un botón flojo.</li>
+            <li>Prepará aguja, hilo del color adecuado y tijera.</li>
+            <li>Reforzá el botón con varias puntadas y asegurá el hilo al terminar.</li>
+            <li>Si el arreglo es complejo, consultá un taller de costura.</li>
+          </ol>
+        </details>
+      </article>
+      <article class="tarjeta tarjeta-extra">
+        <div class="imagen-tarjeta">
+          <img src="imagenes/percha.svg" alt="Percha para la guía de intercambio de ropa" width="400" height="360" loading="lazy">
+          <span class="etiqueta">SEGUNDA MANO</span>
+        </div>
+        <h2>Lo que ya no usás<br>puede seguir su camino.</h2>
+        <p>Organizá un intercambio con amistades y dejá que cada prenda encuentre una nueva historia.</p>
+        <a class="enlace-guia" href="#guia-intercambio">Ver la guía <span class="flecha" aria-hidden="true"></span></a>
+        <details id="guia-intercambio" class="detalle-guia">
+          <summary>Organizá un intercambio</summary>
+          <ol>
+            <li>Separá prendas limpias y en buen estado que ya no uses.</li>
+            <li>Acordá un encuentro y reglas claras con quienes participan.</li>
+            <li>Contá la talla y cualquier detalle de cada prenda.</li>
+            <li>No intercambies por obligación: elegí solo lo que vas a usar.</li>
+          </ol>
+        </details>
+      </article>
+    </section>
+
+    <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor">
+        <h2 id="titulo-contacto">Demos otra vuelta, juntos.</h2>
+        <!-- Demostración local: validación nativa, sin guardar ni enviar datos a terceros. -->
+        <form action="gracias.html" method="get">
+          <div class="fila-formulario">
+            <label class="campo-email" for="email"><span>Tu correo electrónico</span>
+              <input id="email" type="email" name="email" placeholder="nombre@ejemplo.com" autocomplete="email" required maxlength="254">
+            </label>
+            <button class="boton boton-claro" type="submit">Enviar <span class="flecha" aria-hidden="true"></span></button>
+          </div>
+          <label class="consentimiento" for="consentimiento">
+            <input type="checkbox" id="consentimiento" name="consentimiento" value="aceptado" required>
+            <span>Entiendo que este formulario es una demostración y no guarda mis datos.</span>
+          </label>
+        </form>
+        <p class="nota-formulario">Proyecto educativo · Usá un correo de ejemplo para probarlo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><a class="marca" href="#inicio">otra vuelta<span class="flecha" aria-hidden="true"></span></a></p>
+      <p>Un armario más consciente. Un hábito a la vez. <span class="ods">ODS 12 · Producción y consumo responsables</span></p>
+      <details class="creditos">
+        <summary>Fuentes y créditos</summary>
+        <p>Referencia conceptual: <a href="https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/" target="_blank" rel="noopener noreferrer">Naciones Unidas, Objetivo 12</a>. Los textos y las ilustraciones SVG fueron creados para este proyecto con asistencia de OpenAI Codex. No se utilizan estadísticas ni fotografías de terceros.</p>
+        <p>Tipografía: <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer">Manrope, de Mikhail Sharanda y colaboradores (Google Fonts)</a>, distribuida localmente con licencia SIL Open Font License. <a href="fuentes/OFL-Manrope.txt">Consultar licencia</a>.</p>
+      </details>
+    </div>
+  </footer>
+</body>
+</html>

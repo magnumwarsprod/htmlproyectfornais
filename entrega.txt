@@ -1,0 +1,23 @@
+URL del sitio publicado: PENDIENTE DE PUBLICACIÓN
+ODS elegido: ODS 12 — Producción y consumo responsables.
+
+Enfoque conceptual:
+Otra vuelta invita a prolongar la vida de la ropa mediante el cuidado,
+la reparación y el intercambio. Propone hábitos cotidianos accesibles
+antes de comprar nuevas prendas. El sistema visual usa tonos naturales
+e ilustraciones de objetos del armario para transmitir cercanía y cuidado.
+
+Créditos:
+Referencia conceptual: https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/
+Tipografía: Manrope (Google Fonts), licencia SIL OFL incluida en fuentes/OFL-Manrope.txt.
+Textos, ilustraciones SVG y desarrollo HTML/CSS: creados con asistencia de OpenAI Codex.
+Contexto de uso de IA: interpretación de wireframes, propuesta visual, redacción y desarrollo inicial.
+El estudiante debe revisar, adaptar y comprender el trabajo antes de entregarlo.
+
+Pendientes antes de entregar:
+- Publicar el sitio y sustituir la URL pendiente.
+- Completar las validaciones oficiales W3C de HTML y CSS.
+  Comprobación previa: validador Nu local, HTML y CSS sin errores.
+  Los validadores web W3C están bloqueados por la red de este entorno.
+- Conectar el formulario a un receptor real si la docente requiere recepción de datos.
+  La versión actual es una demostración con validación HTML nativa y página de destino.
